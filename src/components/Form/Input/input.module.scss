@@ -1,0 +1,74 @@
+@import "../../../styles/generic.scss";
+Input {
+    font-size: 1rem;
+    cursor: text;
+    transition: all 0.2s;
+    touch-action: manipulation;
+    border: $border-width-base $border-style-base $input-border-color;
+    border-radius: $borderRadius;
+    width: 100%;
+    position: relative;
+    padding: 1.285rem 1.07rem;
+    line-height: 1.28rem;
+    color: #223856;
+
+    &:focus,
+    &:visited,
+    &:active,
+    &:link {
+      outline: 0;
+    }
+
+    &:focus {
+      border-color: grey;
+      padding-top: 1.857rem;
+      padding-bottom: 0.714rem;
+    }
+
+    &::-webkit-input-placeholder {
+      opacity: 0;
+      transition: inherit;
+      color: $input-placeholder-color;
+    }
+
+    &::-moz-placeholder {
+      opacity: 0;
+      transition: inherit;
+      color: $input-placeholder-color;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: 0;
+      transition: inherit;
+      color: $input-placeholder-color;
+    }
+
+    &:-moz-placeholder {
+      opacity: 0;
+      transition: inherit;
+      color: $input-placeholder-color;
+    }
+
+    &:placeholder-shown+label {
+      cursor: text;
+      white-space: nowrap;
+    }
+
+    &:focus::-webkit-input-placeholder {
+      opacity: 1;
+    }
+
+    &:focus::-moz-placeholder {
+      opacity: 1;
+    }
+
+    &:focus:-ms-input-placeholder {
+      opacity: 1;
+    }
+
+    &:focus:-moz-placeholder {
+      opacity: 1;
+    }
+
+   
+  }

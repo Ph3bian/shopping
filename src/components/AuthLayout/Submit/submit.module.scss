@@ -1,0 +1,12 @@
+@import "../../../styles/generic.scss";
+@import "../../../styles/variables";
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &Link {
+    color: $default-green;
+    font-size: to-rem(14);
+  }
+}

@@ -1,0 +1,106 @@
+@import "variables";
+@import "breakpoint";
+@import "normalize";
+@import "typography";
+@import "./converter";
+
+html {
+  font-size: 80%;
+  scroll-behavior: smooth;
+
+  // @include md {
+  //   font-size: 80%;
+  // }
+
+  @include xl {
+    font-size: 85%;
+  }
+
+  @include rwd(1440) {
+    font-size: 90%;
+  }
+
+  @include rwd(2560) {
+    font-size: 180%;
+  }
+}
+
+body {
+  font-family: "Sofia", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 2560px;
+  margin: 0 auto;
+  color: $black;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus,
+  &:visited,
+  &:active {
+    outline: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-weight: 500;
+}
+g[class$="creditgroup"] {
+  display: none !important;
+}
+.carousel {
+  .slide {
+    img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
+:global {
+  .Toastify__toast-container {
+    .Toastify__toast {
+      font-family: "Sofia", sans-serif;
+    }
+  }
+}
+
+

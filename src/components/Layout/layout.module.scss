@@ -1,0 +1,41 @@
+@import "../../styles/generic.scss";
+
+
+.layout {
+  display: grid;
+  grid-template-columns: to-em(65) 1fr;
+  grid-template-rows: minmax(0, 100vh) auto;
+  @include md {
+  }
+  &Side {
+    background: $primary-dark;
+    height: 100vh;
+    overflow-x: visible;
+    max-height: 100vh;
+  }
+  &Content {
+    overflow: auto;
+    background: $container-background;
+  }
+}
+
+.pageLayout {
+  display: grid;
+  grid-template-columns: to-em(230) 1fr;
+  grid-template-rows: minmax(0, 100vh) auto;
+  @include md {
+  }
+  &Side {
+    background: $hover-state;
+    height: 100vh;
+    overflow-x: visible;
+    max-height: 100vh;
+  }
+  &Content {
+    padding: to-rem(44 32);
+    overflow: auto;
+    background: $container-background;
+  }
+}
+
+

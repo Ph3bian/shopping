@@ -1,0 +1,85 @@
+@import "../../styles/generic.scss";
+.container {
+  font-size: 1rem;
+  display: block;
+  height: 100vh;
+
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    width: 4.55rem;
+    margin-bottom: to-rem(120);
+  }
+  .form {
+    padding: 1.96rem 5em;
+    background: $primary-dark;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    .formCard {
+      max-width: 25rem;
+      color: $question-header;
+      .instruction {
+        font-size: to-rem(25);
+        line-height: to-rem(30);
+        color: $focused;
+        margin-bottom: to-rem(30);
+      }
+
+      > form {
+        > div {
+          background: transparent;
+        }
+
+        input {
+          margin-bottom: to-rem(20);
+        }
+      }
+
+      .header {
+        font-size: 1.33em;
+        line-height: 1.21em;
+        font-weight: bold;
+        margin-bottom: 13px;
+        color: #000;
+      }
+    }
+  }
+  .bg {
+    background: $bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    max-width: to-rem(420);
+    letter-spacing: 0.03em;
+    .bigText {
+      font-weight: 500;
+      font-size: to-rem(50);
+      line-height: 1.1em;
+      color: $white;
+      margin-bottom: to-rem(50);
+    }
+    .mediumText {
+      font-weight: normal;
+      font-size: to-rem(20);
+      line-height: 1.2rem;
+      margin-bottom: to-rem(50);
+      color: $focused;
+    }
+  }
+
+  img {
+    display: none;
+    object-fit: cover;
+    height: inherit;
+    @include md {
+      display: block;
+      width: 100%;
+    }
+  }
+}
