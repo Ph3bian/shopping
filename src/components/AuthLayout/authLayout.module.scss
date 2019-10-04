@@ -7,47 +7,54 @@
   @include md {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row: 1;
   }
 
   .logo {
     width: 4.55rem;
     margin-bottom: to-rem(120);
   }
-  .form {
-    padding: 1.96rem 5em;
+  &Holder{
     background: $primary-dark;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    .formCard {
-      max-width: 25rem;
-      color: $question-header;
-      .instruction {
-        font-size: to-rem(25);
-        line-height: to-rem(30);
-        color: $focused;
-        margin-bottom: to-rem(30);
-      }
-
-      > form {
-        > div {
-          background: transparent;
+    padding: 4rem 5em;
+  
+    .form {
+      margin-top:4rem;
+      height: inherit;
+      display: flex;
+      align-items: center;
+     
+      .formCard {
+        max-width: 25rem;
+        color: $question-header;
+        .instruction {
+          font-size: to-rem(25);
+          line-height: to-rem(30);
+          color: $focused;
+          margin-bottom: to-rem(30);
         }
-
-        input {
-          margin-bottom: to-rem(20);
+  
+        > form {
+          > div {
+            background: transparent;
+          }
+  
+          input {
+            margin-bottom: to-rem(20);
+          }
         }
-      }
-
-      .header {
-        font-size: 1.33em;
-        line-height: 1.21em;
-        font-weight: bold;
-        margin-bottom: 13px;
-        color: #000;
+  
+        .header {
+          font-size: 1.33em;
+          line-height: 1.21em;
+          font-weight: bold;
+          margin-bottom: 13px;
+          color: #000;
+        }
       }
     }
   }
+  
   .bg {
     background: $bg;
     display: flex;

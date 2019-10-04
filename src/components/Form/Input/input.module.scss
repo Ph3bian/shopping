@@ -20,9 +20,8 @@ Input {
     }
 
     &:focus {
-      border-color: grey;
-      padding-top: 1.857rem;
-      padding-bottom: 0.714rem;
+      border-color: $focused;
+
     }
 
     &::-webkit-input-placeholder {

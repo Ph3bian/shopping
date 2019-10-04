@@ -1,1 +1,15 @@
 @import "../../../styles/generic.scss";
+Button{
+    width:100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    touch-action: manipulation;
+    border: $border-width-base $border-style-base $focused;
+    border-radius: $borderRadius;
+    position: relative;
+    padding: .8rem;
+    line-height: 1.28rem;
+    color: $primary-dark;
+    background: $focused
+}

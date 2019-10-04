@@ -1,6 +1,7 @@
 import React, {  useState } from "react";
 import { connect } from 'react-redux';
 import AuthLayout from "../../components/AuthLayout";
+import { Input } from "../../components/Form"
 import Submit from "../../components/AuthLayout/Submit";
 import { forgotPassword } from '../../store/actions/auth'
 const enterEmailRef = React.createRef();
@@ -18,7 +19,7 @@ const ResetPassword = (props) => {
   return (
     <AuthLayout instruction={'Reset Password'}>
       <form onSubmit={handleSubmit}>
-        <input
+        <Input
           label="Email address"
           placeholder="Email address"
           ref={enterEmailRef}
@@ -38,9 +39,6 @@ const mapStateToProps = (state) => ({
   user: state.auth.user
 })
 
-const mapDispatchToProps = (dispatch) => ({
-  forgotPassword: (email) => dispatch(forgotPassword(email))
-})
 
-export default connect(mapStateToProps, mapDispatchToProps)(ResetPassword);
+export default connect(mapStateToProps, {forgotPassword})(ResetPassword);
 

@@ -11,12 +11,13 @@ const enterPasswordRef = React.createRef();
 
 const Login = props => {
 
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    return props.loginUser({ username, password })
+    console.log(email, password)
+    return props.loginUser({ email, password })
   }
   useEffect(() => {
     if (props.token) { return props.history.push('/') }
@@ -29,11 +30,11 @@ const Login = props => {
         label="Email address"
         placeholder="Email address"
         ref={enterEmailRef}
-        onChange={e => setUsername(e.target.value)}
+        onChange={e => setEmail(e.target.value)}
         required
         name="email"
-        value=""
         id="email"
+        type="email"
       />
 
       <Input

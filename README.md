@@ -1,16 +1,21 @@
 # Shopping
 
-Ecommerce website bootstrapped with[Create React App](https://github.com/facebook/create-react-app).
+Ecommerce website bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Endpoints
 
-Built using endpoints from Shoppaz (to be Updated soon)
+Built using endpoints from Shopfairy (to be Updated soon)
 
 ## Project Description (User Stories)
 
 - User can create an account
 - User can login
-- User can view all available items up for sale.
+- User can view all available items up for sale
 - User can select item and add item(s) to cart
+- Admin user can create account
+- Admin user can update personal information
+- Admin user can upload items up for sale
+- Admin user can update items up for sale (i.e apply discount)
+
 
 
 ## Hosted Url

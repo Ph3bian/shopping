@@ -2,10 +2,13 @@
 @import "../../../styles/variables";
 
 .submit {
-  display: flex;
-  justify-content: space-between;
+  button {
+    margin-bottom: 1.25rem;
+  }
   align-items: center;
   &Link {
+    display: flex;
+    justify-content: space-between;
     color: $default-green;
     font-size: to-rem(14);
   }
