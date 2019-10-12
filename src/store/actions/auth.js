@@ -10,7 +10,7 @@ export const loginUser = (values) => async (dispatch) => {
   }
 
   try {
-    console.log(values)
+ 
     const response = await Axios.post(`${Config.baseUrl}/auth/signin`, values)
     let { data: { token } } = response
     localStorage.setItem('authToken', JSON.stringify(token))

@@ -28,7 +28,7 @@ const Login = props => {
     if (props.token) { return props.history.push('/') }
   }, [props.token, props.history])
 
-console.log(errors)
+
   return (<AuthLayout instruction={'Hello, welcome to ShopFairy'}>
     <form onSubmit={handleSubmit}>
       <Input
