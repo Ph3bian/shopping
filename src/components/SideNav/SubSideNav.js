@@ -1,9 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import styles from "./sideNav.module.scss";
-import { Logo, Menu } from "../../assets/svg";
 
 const SubSideNav = ({ header, menuItems, sectionBaseURL }) => {
   return (
@@ -31,6 +29,5 @@ const SubSideNav = ({ header, menuItems, sectionBaseURL }) => {
   );
 };
 
-SubSideNav.propTypes = {};
 
 export default SubSideNav;
