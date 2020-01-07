@@ -1,3 +1,3 @@
 export default {
-  baseUrl: "https://q-credit.herokuapp.com/"
-};
+    baseUrl: 'http://127.0.0.1:3333'
+}

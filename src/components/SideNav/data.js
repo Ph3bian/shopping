@@ -1,8 +1,3 @@
-import {
+import {} from '../../assets/svg'
 
-} from "../../assets/svg";
-
-export default [
- 
-
-];
+export default []

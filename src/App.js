@@ -1,15 +1,16 @@
-import React from "react";
-import { Provider } from "react-redux";
-import AppRouter from "./components/AppRouter";
-import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import AppRouter from 'components/AppRouter'
+import { AuthProviderContainer } from 'context/AuthContext'
 
-toast.configure({ autoClose: 5000 });
+const App = () => {
+    return (
+        <AuthProviderContainer>
+            <BrowserRouter>
+                <AppRouter />
+            </BrowserRouter>
+        </AuthProviderContainer>
+    )
+}
 
-const App = ({ store }) => (
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>
-);
-
-export default App;
+export default App
