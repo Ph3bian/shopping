@@ -12,7 +12,7 @@ const Submit = ({ text, url, tag }) => {
                 <Link className={styles.submitLink} to={url}>
                     {tag}
                 </Link>
-                <Link className={styles.submitLink} to={url}>
+                <Link className={styles.submitLink} to="/create-account">
                     Create Account
                 </Link>
             </div>
